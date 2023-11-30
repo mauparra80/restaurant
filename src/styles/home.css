@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.head{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: red;
+}
+
+.section{
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+
