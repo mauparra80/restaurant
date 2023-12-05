@@ -133,7 +133,8 @@ body{
 }
 
 #hours,
-#location{
+#location,
+#contact{
     flex: 1 1 300px;
     background-color: var(--color-tan);
     padding: 30px;
@@ -177,6 +178,7 @@ img{
 
 /* menu */
 
+#contactpage,
 #menupage{
     display: flex;
     flex-direction: column;
@@ -197,7 +199,8 @@ img{
     background-color: var(--color-tan);
 }
 
-#menupage-title{
+#menupage-title,
+#contactpage-title{
     align-self: center;
     margin-bottom: 30px;
 }
@@ -237,3 +240,18 @@ img{
     max-width: 100px;;
 }
 
+
+
+/* contact */
+#info{
+    margin-bottom: 20px;
+}
+
+#careers p{
+    font-size: 10px;
+}
+
+#contact-bottom-img{
+    height: 300px;
+    object-fit: cover;
+}
