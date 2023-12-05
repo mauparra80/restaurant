@@ -1,5 +1,5 @@
 
-
+import tinyMenImg from "../img/tiny-men.jpg"
 
 const home = function(){
     const content = document.querySelector('.content');
@@ -8,12 +8,7 @@ const home = function(){
     main.id="main";
     content.appendChild(main);
 
-    const box1 = document.createElement("div");
-    box1.id="box1";
-    const box2 = document.createElement("div");
-    box2.id="box2";
-    main.appendChild(box1);
-    main.appendChild(box2);
+    
 
     const section1 = document.createElement("div");
     section1.classList.add("section");
@@ -84,7 +79,8 @@ const home = function(){
     section2.appendChild(middlePic);
 
     const middleImg = document.createElement("img");
-    middleImg.src = "../src/img/tiny-sandwich.jpg" //wonder if I have to put this directory path
+    middleImg.src = tinyMenImg //wonder if I have to put this directory path
+    middleImg.id="homeImg";
     middleImg.alt = "tiny sandwich";
     middlePic.appendChild(middleImg);
 
