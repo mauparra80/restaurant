@@ -1,5 +1,6 @@
 
 import tinyMenImg from "../img/tiny-men.jpg"
+import mapImg from "../img/tinyfoods-map.jpg"
 
 const home = function(){
     const content = document.querySelector('.content');
@@ -103,7 +104,7 @@ const home = function(){
     const locationMap = document.createElement("div");
     locationMap.id = "location-map";
     const locationimg = document.createElement("img");
-    locationimg.src = "../src/img/tinyfoods-map.jpg";
+    locationimg.src = mapImg;
     locationMap.appendChild(locationimg);
     location.appendChild(locationMap);
     

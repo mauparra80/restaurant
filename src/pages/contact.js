@@ -1,4 +1,5 @@
 import restaurant from "../img/restaurant.jpg"
+import mapImg from "../img/tinyfoods-map.jpg"
 
 const contact = function() 
 {
@@ -60,7 +61,7 @@ const contact = function()
     const locationMap = document.createElement("div");
     locationMap.id = "location-map";
     const locationimg = document.createElement("img");
-    locationimg.src = "../src/img/tinyfoods-map.jpg";
+    locationimg.src = mapImg;
     locationMap.appendChild(locationimg);
     location.appendChild(locationMap);
 
