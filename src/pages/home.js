@@ -25,10 +25,10 @@ const home = function(){
     section1.appendChild(about);
 
     const aboutTitle = document.createElement("div");
-    about.id="about-title";
+    aboutTitle.id="about-title";
     about.appendChild(aboutTitle);
     const abouth2 = document.createElement("h2")
-    abouth2.textContent = "About";
+    abouth2.textContent = "We are TinyFoods";
     aboutTitle.appendChild(abouth2);
 
     const aboutDescription = document.createElement("div");
@@ -50,9 +50,10 @@ const home = function(){
 
     const hoursTitle = document.createElement("div");
     hoursTitle.id = "hours-title";
+    
     hours.appendChild(hoursTitle);
     const hourstitleh3 = document.createElement("h3");
-    hourstitleh3.textcontent = "Hours of Operation"
+    hourstitleh3.innerText = "Hours of Operation";
     hoursTitle.appendChild(hourstitleh3);
 
     const hoursList = document.createElement("div");
@@ -65,16 +66,15 @@ const home = function(){
     'Thursday: 10am-8pm',
     'Friday: 10am-10pm',
     'Saturday: 10am-10pm',
-    'Sunday: 8am-8pm']
+    'Sunday: 8am-8pm'];
 
-    const fragment = document.createDocumentFragment();
+    let fragment = document.createDocumentFragment();
     const ul = document.createElement('ul');
     hoursItems.forEach(itemText => {
-        const li = document.createElement('li');
-        li.textcontent = itemText;
+        let li = document.createElement('li');
+        li.innerText = itemText;
         fragment.appendChild(li);
     })
-
     ul.appendChild(fragment);
     hoursList.appendChild(ul);
 

@@ -17,9 +17,10 @@ body{
 }
 
 .content{
+    position: relative;
     background-color: rgb(255, 255, 255);
     width: 80vw;
-    padding: 0px 50px 0px 50px;
+    padding: 20px 50px 20px 50px;
 }
 
 .head{
@@ -88,6 +89,7 @@ body{
 #box2{
     position: absolute;
     border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
 }
 
 #box1{
@@ -109,28 +111,34 @@ body{
     display: flex;
     gap: 50px;
     justify-content: space-around;
+    z-index: 99;
+    flex-wrap: wrap;
+    
 }
 
-.title{
+#location-title,
+#hours-title{
     margin-bottom: 10px;
-    text-decoration: underline;
 }
 
 #about{
     background-color: var(--color-tan);
     padding: 50px;
     border-radius: 5px;
-
     box-shadow: 2px 2px 5px 2px rgba(128, 128, 128, 0.529);
+}
+
+#about-title{
+    margin-bottom: 20px;
 }
 
 #hours,
 #location{
-    flex: 1;
+    flex: 1 1 300px;
     background-color: var(--color-tan);
     padding: 30px;
     min-width: 300px;
-    max-width: 600px;
+    max-width: 400px;
     text-align: center;
 
     box-shadow: 2px 2px 5px 2px rgba(128, 128, 128, 0.529);
@@ -146,14 +154,15 @@ img{
     width: 100%;
     object-fit: fill;
     box-shadow: 2px 2px 5px 2px rgba(128, 128, 128, 0.529);
+    min-width: 100px;
 
 }
 
-#location{
-    background-color: var(--color-tan);
-    padding: 20px;
-    
+#middle-pic img{
+    flex: 1 1 100px;
+    max-width: 300px;
 }
+
 
 .location-written{
     margin-bottom: 20px;
@@ -165,4 +174,66 @@ img{
     width: 80vw;
 }
 
+
+/* menu */
+
+#menupage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+    padding: 50px 100px 50px 100px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+    border: 2px double black;
+    background-color: var(--color-tan);
+}
+
+#menupage-title{
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+#menu-title{
+    align-self: center;
+    justify-self: center;
+    text-decoration: underline;
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
+    /* padding: 20px 20px 0 20px; */
+    margin: 20px 20px 0 20px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+}
+
+.item-written{
+    align-self: end;
+}
+
+.item-written p{
+    font-style:italic;
+}
+
+
+.item-line{
+    flex-grow: 2;
+    
+    margin: 0 20px 0 20px;
+}
+
+
+.item-picture{
+    max-width: 100px;;
+}
 
